@@ -1,0 +1,13 @@
+<div>
+    <button  class="btn btn-danger" (click)="text_color = 'text-danger'"> color rojo</button>
+    <button  class="btn btn-success mx-2" (click)="text_color = 'text-success'">color verde</button>
+    <button  class="btn btn-primary" (click)="text_color = 'text-primary'">color azul</button>
+</div>
+
+<h1 [class]="text_color">Texto que va cambiar de color</h1>
+
+<h2>{{text_color}}</h2>
+
+<button class="btn btn-secondary" (click)="button_disable = !button_disable">
+    Activar/Desactivar
+</button>
